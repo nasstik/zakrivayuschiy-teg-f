@@ -12,5 +12,6 @@
 
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvb;
+  /* min-block-size: 100dvb; */
 }
+/* mklp */
