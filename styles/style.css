@@ -12,6 +12,129 @@
 
 .page {
   min-inline-size: 320px;
-  /* min-block-size: 100dvb; */
+  min-block-size: 100dvb;
+  font-family: 'Inter-Variable',sans-serif;
+  font-variation-settings: 'wght' var(--main-font-weight);
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ background-image: repeating-linear-gradient(to left, #d3d3d3 0px, #d3d3d3 2px,transparent 2px, transparent 4px), repeating-linear-gradient( to top, #d3d3d3 0px, #d3d3d3 2px,transparent 2px, transparent 4px), linear-gradient(#e7e7e7,#1a1a1a) ;
+ background-size: cover;
+
 }
-/* mklp */
+
+.header {
+  width: clamp(300px, 48.6vw, 700px);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border:2px solid black;
+  align-items: center;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+.header_title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-family: var(--accent-font-family);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.header_sudheading {
+  font-family: var(--accent-font-family);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
+}
+.card {
+  width: clamp(300px, 48.6vw, 700px);
+  display: block;
+  /* flex-direction: column; */
+  background-color: white;
+  border:2px solid black;
+  margin-bottom: 50px;
+ 
+}
+.card_title{
+font-variation-settings: 'wght' var(--bold-font-weight);
+margin-top:6px ;
+margin-left: 10px;
+margin-bottom: 3px;
+font-size: 18px;
+}
+.card_image {
+ width: clamp(300px, 48.6vw, 700px); 
+}
+.card_description {
+  
+  margin-top: 23px;
+  margin-bottom:22px ;
+  margin-left: 25px;
+  margin-right:25px ;
+  font-size: 18px;
+  line-height: 21px;
+  
+}
+.card_description p:not(:last-child){
+  margin-bottom: 27px;
+}
+.card_buttons{
+  display: flex;
+  gap:20px;
+  justify-content: end;
+  align-items: center;
+}
+.card-heard {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.card__like-button {
+  display: block;
+  border:2px solid black;
+  padding:7px 35px;
+ 
+}
+.card_button {
+  overflow: hidden;
+  color: white;
+  background: white;
+  position: relative;
+}
+.card_button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 black;
+  transition: box-shadow 0.3s ease;
+}
+
+.card_button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+ 
+}
+.card_button:hover::before {
+  transform: translateX(0);
+}
+
+
+.button__text {
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  line-height: 90%;
+  mix-blend-mode: difference;
+}
+.button_save {
+  display: block;
+}
+.floppy_svg {
+
+  width: 21px;
+  height: 21px;
+  mix-blend-mode: difference;
+}
