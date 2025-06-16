@@ -1,9 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font-family:'Inter-Variable';
-    --accent-font-family:'Press Start 2P';
+    --main-font-family:'Inter-Variable' , sans-serif;
+    --accent-font-family:'Press Start 2P', sans-serif;
     --main-font-weight:400;
     --bold-font-weight:700;
+    --main-font-size:18px;
+    --accent-font-size:14px;
     --contour-color:black;
     --animation-fill-color:red;
+    --border:2px solid black;
+    --text-stroke-color:rgb(255, 255, 255, 0.5);
 }
