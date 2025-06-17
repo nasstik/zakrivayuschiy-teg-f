@@ -183,7 +183,7 @@ main {
 }
 
 .like-icon .core {
-  fill: none;
+  fill: transparent;
   transition: fill 0.3s;
   transition-delay: 0.03s;
 }
@@ -195,7 +195,7 @@ main {
 }
 
 .like-icon .main-body {
-  fill: none;
+  fill: transparent;
   transition: fill 0.3s;
   transition-delay: 0;
 }
