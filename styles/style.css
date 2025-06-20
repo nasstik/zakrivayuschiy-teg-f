@@ -129,6 +129,7 @@ main {
   position: absolute;
   top: 27px;
   right: 25px;
+  z-index: 1;
   font-family: var(--accent-font-family);
   font-size: var(--accent-font-size);
   font-variation-settings: "wght" var(--main-font-weight);
